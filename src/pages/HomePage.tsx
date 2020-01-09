@@ -1,27 +1,7 @@
 import React from 'react';
 
-import logo from '../logo.svg';
-import './HomePage.css';
-
-const MainPage: React.FC = () => {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Repo link
-        </a>
-      </header>
-    </div>
-  );
+const HomePage: React.FC = () => {
+  return <h1>Home Page</h1>;
 };
 
-export default MainPage;
+export default HomePage;

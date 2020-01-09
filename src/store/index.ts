@@ -18,9 +18,7 @@ const enhancer = composeEnhancers(applyMiddleware(...middlewares));
 
 const initialState = {};
 
-// eslint-disable-next-line @typescript-eslint/ban-ts-ignore
-// @ts-ignore
-const store = createStore(rootReducer, initialState, enhancer);
+const store = createStore(rootReducer(history), initialState, enhancer);
 
 // export store singleton instance
 export default store;
